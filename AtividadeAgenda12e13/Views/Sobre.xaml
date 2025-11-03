@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AtividadeAgenda12e13.Views.Sobre"
+    NavigationPage.HasNavigationBar="False"
+    Padding="10,50,0,10"
+    Background="{StaticResource BackGround}">
+    <VerticalStackLayout
+        Spacing="30">
+        <Label
+            Text="Sobre o app"
+            FontSize="50"
+            FontFamily="UrbanistBold"
+            TextColor="{StaticResource Color1}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+        <Frame>
+            <VerticalStackLayout
+                Spacing="20">
+                <Label
+                    Text="Desenvolvedor: Júnior"
+                    FontSize="20"
+                    FontFamily="UrbanistBold"
+                    TextColor="{StaticResource Color3}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                />
+
+                <Label
+                    Text="Ano: 2025"
+                    FontSize="20"
+                    FontFamily="UrbanistBold"
+                    TextColor="{StaticResource Color3}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                />
+
+                <Label
+                    Text="Descrição: App desenvolvido para a atividade da agenda 13 do curso de desenvolvimento de sistemas."
+                    FontSize="20"
+                    FontFamily="UrbanistBold"
+                    TextColor="{StaticResource Color3}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                />
+
+                <Label
+                    Text="Tutor: Alex Machado"
+                    FontSize="20"
+                    FontFamily="UrbanistBold"
+                    TextColor="{StaticResource Color3}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                />
+
+                <Label
+                    Text="Instituição: ETEC"
+                    FontSize="20"
+                    FontFamily="UrbanistBold"
+                    TextColor="{StaticResource Color3}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                />
+
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+
+    </VerticalStackLayout>
+</ContentPage>

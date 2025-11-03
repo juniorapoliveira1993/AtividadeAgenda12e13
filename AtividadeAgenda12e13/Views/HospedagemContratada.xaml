@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AtividadeAgenda12e13.Views.HospedagemContratada"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="{StaticResource BackGround}"
+>
+    <VerticalStackLayout
+        VerticalOptions="Center">
+        <Label
+            x:Name="lb_quarto"
+            Text="Suíte Super Luxo"
+            FontFamily="UrbanistBold"
+            FontSize="50"
+            HorizontalTextAlignment="Center"
+            TextColor="{StaticResource Color1}" />
+        <Frame
+            Margin="10">
+            <HorizontalStackLayout>
+                <HorizontalStackLayout
+                    >
+                    <Label
+                        Text="Adultos:"
+                        FontFamily="Urbanist"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                    />
+
+
+                    <Label
+                        x:Name="quantidade_adultos"
+                        Text="10"
+                        FontFamily="Urbanist"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                    />
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout
+                    >
+                    <Label
+                        Text="Crianças:"
+                        FontFamily="Urbanist"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                    />
+
+
+                    <Label
+                        x:Name="quantidade_criancas"
+                        Text="10"
+                        FontFamily="Urbanist"
+                        FontSize="Default"
+                        HorizontalTextAlignment="Center"
+                    />
+
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame
+            Margin="10">
+            <Grid
+                RowDefinitions="Auto, Auto"
+                ColumnDefinitions="*, *, *">
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Check-in" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="Check-out" />
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Text="Estadia" />
+
+                <Label
+                    x:Name="lb_checkin"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Check-in" />
+                <Label
+                    x:Name="lb_checkout"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="Check-out" />
+                <Label
+                    x:Name="lb_estadia"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Text="Estadia" />
+            </Grid>
+        </Frame>
+
+        <Frame
+            Margin="10">
+            <HorizontalStackLayout
+                Spacing="10">
+
+                <Label
+                    Text="Valor total:" />
+                <Label
+                    x:Name="lb_valortotal"
+                    Text="500" />
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button
+            Text="Voltar"
+            HorizontalOptions="Center"
+            Clicked="Back" />
+
+    </VerticalStackLayout>
+</ContentPage>
