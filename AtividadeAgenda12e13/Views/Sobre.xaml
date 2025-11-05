@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="AtividadeAgenda12e13.Views.Sobre"
     NavigationPage.HasNavigationBar="False"
-    Padding="10,50,0,10"
+    Padding="0,50,0,0"
     Background="{StaticResource BackGround}">
     <VerticalStackLayout
         Spacing="30">
@@ -15,7 +15,9 @@
             VerticalOptions="Center"
             HorizontalOptions="Center" />
 
-        <Frame>
+        <Frame
+            Margin="10"
+            BackgroundColor="{StaticResource Gray900}">
             <VerticalStackLayout
                 Spacing="20">
                 <Label

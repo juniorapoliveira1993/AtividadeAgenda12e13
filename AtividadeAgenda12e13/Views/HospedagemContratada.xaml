@@ -11,52 +11,57 @@
             x:Name="lb_quarto"
             Text="Suíte Super Luxo"
             FontFamily="UrbanistBold"
-            FontSize="50"
+            FontSize="45"
             HorizontalTextAlignment="Center"
-            TextColor="{StaticResource Color1}" />
+            TextColor="{StaticResource Color1}"
+            Padding="10"
+            Margin="0,0,0,30"/>
         <Frame
             Margin="10">
-            <HorizontalStackLayout>
+            <VerticalStackLayout>
                 <HorizontalStackLayout
+                    Spacing="10"
+                    HorizontalOptions="Center"
                     >
                     <Label
                         Text="Adultos:"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                        HorizontalTextAlignment="Center"
+                        WidthRequest="60"
+                        HorizontalTextAlignment="Start"
                     />
 
 
                     <Label
                         x:Name="quantidade_adultos"
-                        Text="10"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                        HorizontalTextAlignment="Center"
+                        HorizontalTextAlignment="Start"
                     />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
-                    >
+                    Spacing="10"
+                    HorizontalOptions="Center">
                     <Label
                         Text="Crianças:"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                        HorizontalTextAlignment="Center"
+                        WidthRequest="60"
+                        HorizontalTextAlignment="Start"
                     />
 
 
                     <Label
                         x:Name="quantidade_criancas"
-                        Text="10"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                        HorizontalTextAlignment="Center"
+                        HorizontalTextAlignment="Start"
                     />
 
                 </HorizontalStackLayout>
-            </HorizontalStackLayout>
+            </VerticalStackLayout>
         </Frame>
 
         <Frame
@@ -68,44 +73,52 @@
                 <Label
                     Grid.Row="0"
                     Grid.Column="0"
-                    Text="Check-in" />
+                    Text="Check-in"
+                    HorizontalTextAlignment="Center"/>
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"
-                    Text="Check-out" />
+                    Text="Check-out"
+                    HorizontalTextAlignment="Center"/>
                 <Label
                     Grid.Row="0"
                     Grid.Column="2"
-                    Text="Estadia" />
+                    Text="Estadia"
+                    HorizontalTextAlignment="Center"/>
 
                 <Label
                     x:Name="lb_checkin"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Text="Check-in" />
+                    Text="Check-in"
+                    HorizontalTextAlignment="Center"/>
                 <Label
                     x:Name="lb_checkout"
                     Grid.Row="1"
                     Grid.Column="1"
-                    Text="Check-out" />
+                    Text="Check-out"
+                    HorizontalTextAlignment="Center"/>
                 <Label
                     x:Name="lb_estadia"
                     Grid.Row="1"
                     Grid.Column="2"
-                    Text="Estadia" />
+                    Text="Estadia"
+                    HorizontalTextAlignment="Center"/>
             </Grid>
         </Frame>
 
         <Frame
             Margin="10">
             <HorizontalStackLayout
-                Spacing="10">
+                Spacing="10"
+                HorizontalOptions="Center">
 
                 <Label
-                    Text="Valor total:" />
+                    Text="Valor total:" 
+                   />
                 <Label
                     x:Name="lb_valortotal"
-                    Text="500" />
+                   />
             </HorizontalStackLayout>
         </Frame>
 

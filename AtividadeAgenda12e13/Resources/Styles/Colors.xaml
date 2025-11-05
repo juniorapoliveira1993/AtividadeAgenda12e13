@@ -46,7 +46,7 @@
     <!--My colors-->
     <Color x:Key="Color1">#FF4C4C</Color>
     <Color x:Key="Color2">#BBBBBB</Color>
-    <Color x:Key="Color3">#BD3737</Color>
+    <Color x:Key="Color3">#FFFFFF</Color>
     <Color x:Key="BackGround">#303030</Color>
 
 </ResourceDictionary>
