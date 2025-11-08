@@ -27,16 +27,15 @@
                         Text="Adultos:"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                        WidthRequest="60"
-                        HorizontalTextAlignment="Start"
+                       
+                       
                     />
 
 
                     <Label
                         x:Name="quantidade_adultos"
                         FontFamily="Urbanist"
-                        FontSize="Default"
-                        HorizontalTextAlignment="Start"
+                    
                     />
 
                 </HorizontalStackLayout>
@@ -48,16 +47,14 @@
                         Text="Crianças:"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                        WidthRequest="60"
-                        HorizontalTextAlignment="Start"
+                    
                     />
 
 
                     <Label
                         x:Name="quantidade_criancas"
                         FontFamily="Urbanist"
-                        FontSize="Default"
-                        HorizontalTextAlignment="Start"
+                       
                     />
 
                 </HorizontalStackLayout>
