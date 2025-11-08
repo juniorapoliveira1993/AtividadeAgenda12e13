@@ -24,8 +24,8 @@ namespace AtividadeAgenda12e13
         protected override Window CreateWindow(IActivationState? activationState)
         {
             var window = base.CreateWindow(activationState);
-            window.Width = 400;
-            window.Height = 600;
+            window.Width = 396;
+            window.Height = 704;
 
             return window;
         }

@@ -125,7 +125,7 @@
         <Button
             Text="Voltar"
             HorizontalOptions="Center"
-            Clicked="Back" />
+            Clicked="Confirm" />
 
     </VerticalStackLayout>
 </ContentPage>

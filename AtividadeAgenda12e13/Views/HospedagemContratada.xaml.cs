@@ -19,8 +19,10 @@ public partial class HospedagemContratada : ContentPage
 
     }
 
-    private async void Back(object sender, EventArgs e)
+  
+
+    private async void Confirm(object sender, EventArgs e)
     {
-        await Navigation.PopAsync();
+        await Navigation.PushAsync(new Views.DetalhesHospedagem());
     }
 }
