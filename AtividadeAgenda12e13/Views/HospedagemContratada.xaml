@@ -18,47 +18,42 @@
             Margin="0,0,0,30"/>
         <Frame
             Margin="10">
-            <VerticalStackLayout>
+            <StackLayout 
+                Orientation="Horizontal">
                 <HorizontalStackLayout
                     Spacing="10"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="CenterAndExpand"
                     >
                     <Label
                         Text="Adultos:"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                       
-                       
                     />
 
-
                     <Label
+                        Text="a"
                         x:Name="quantidade_adultos"
                         FontFamily="Urbanist"
-                    
                     />
 
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout
                     Spacing="10"
-                    HorizontalOptions="Center">
+                    HorizontalOptions="CenterAndExpand">
                     <Label
                         Text="Crianças:"
                         FontFamily="Urbanist"
                         FontSize="Default"
-                    
                     />
-
 
                     <Label
                         x:Name="quantidade_criancas"
                         FontFamily="Urbanist"
-                       
                     />
 
                 </HorizontalStackLayout>
-            </VerticalStackLayout>
+            </StackLayout>
         </Frame>
 
         <Frame
