@@ -4,6 +4,13 @@
     x:Class="AtividadeAgenda12e13.Views.HostingHistory"
     NavigationPage.HasNavigationBar="False">
 
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#08021a" Offset="0.0"/>
+            <GradientStop Color="#160000" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
 
     <Grid
         RowDefinitions="auto, *">
