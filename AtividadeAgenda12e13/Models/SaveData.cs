@@ -8,14 +8,13 @@ namespace AtividadeAgenda12e13.Models
 {
     class SaveData
     {
-        private String KEY = "HOSTING_HISTORY";
+        private readonly String KEY = "HOSTING_HISTORY";
         private List<HostingData> hostingHistory = [];
 
         public List<HostingData> HostingHistory => [.. hostingHistory];
 
         public SaveData()
         {
-            //Preferences.Remove(KEY);
             string a = Preferences.Get(KEY, "");
 
             if (string.IsNullOrEmpty(a)) return;
