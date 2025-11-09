@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AtividadeAgenda12e13.Views.HostingHistory"
+    NavigationPage.HasNavigationBar="False">
+
+
+    <Grid
+        RowDefinitions="auto, *">
+
+        <Label
+            Grid.Row="0"
+            Text=" Histórico de hospedagem"
+            HorizontalTextAlignment="Center"
+            FontFamily="UrbanistBold"
+            FontSize="Medium"
+            TextColor="{StaticResource Color1}"
+            Padding="10" />
+
+
+        <CollectionView
+            Grid.Row="1"
+            ItemsSource="{Binding History}">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        Padding="20,10,20,10">
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OpenContractedHostingPage"
+                                NumberOfTapsRequired="1" />
+                        </Frame.GestureRecognizers>
+
+                        <VerticalStackLayout
+                            Margin="0"
+                        >
+                            <Label
+                                Text="{Binding Description}"
+                                FontFamily="Urbanist"
+                                FontSize="Medium"
+                            />
+                            <Label
+                                Text="{Binding DateHire}"
+                                FontFamily="Urbanist"
+                                FontSize="Body"
+                                HorizontalTextAlignment="End"
+                            />
+
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

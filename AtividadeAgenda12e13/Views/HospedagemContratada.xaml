@@ -15,15 +15,15 @@
             HorizontalTextAlignment="Center"
             TextColor="{StaticResource Color1}"
             Padding="10"
-            Margin="0,0,0,30"/>
+            Margin="0,0,0,30" />
         <Frame
             Margin="10">
-            <StackLayout 
+            <StackLayout
                 Orientation="Horizontal">
                 <HorizontalStackLayout
                     Spacing="10"
                     HorizontalOptions="CenterAndExpand"
-                    >
+                >
                     <Label
                         Text="Adultos:"
                         FontFamily="Urbanist"
@@ -31,7 +31,6 @@
                     />
 
                     <Label
-                        Text="a"
                         x:Name="quantidade_adultos"
                         FontFamily="Urbanist"
                     />
@@ -66,36 +65,36 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     Text="Check-in"
-                    HorizontalTextAlignment="Center"/>
+                    HorizontalTextAlignment="Center" />
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"
                     Text="Check-out"
-                    HorizontalTextAlignment="Center"/>
+                    HorizontalTextAlignment="Center" />
                 <Label
                     Grid.Row="0"
                     Grid.Column="2"
                     Text="Estadia"
-                    HorizontalTextAlignment="Center"/>
+                    HorizontalTextAlignment="Center" />
 
                 <Label
                     x:Name="lb_checkin"
                     Grid.Row="1"
                     Grid.Column="0"
                     Text="Check-in"
-                    HorizontalTextAlignment="Center"/>
+                    HorizontalTextAlignment="Center" />
                 <Label
                     x:Name="lb_checkout"
                     Grid.Row="1"
                     Grid.Column="1"
                     Text="Check-out"
-                    HorizontalTextAlignment="Center"/>
+                    HorizontalTextAlignment="Center" />
                 <Label
                     x:Name="lb_estadia"
                     Grid.Row="1"
                     Grid.Column="2"
                     Text="Estadia"
-                    HorizontalTextAlignment="Center"/>
+                    HorizontalTextAlignment="Center" />
             </Grid>
         </Frame>
 
@@ -106,11 +105,11 @@
                 HorizontalOptions="Center">
 
                 <Label
-                    Text="Valor total:" 
-                   />
+                    Text="Valor total:"
+                />
                 <Label
                     x:Name="lb_valortotal"
-                   />
+                />
             </HorizontalStackLayout>
         </Frame>
 

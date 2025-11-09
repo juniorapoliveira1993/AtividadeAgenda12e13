@@ -1,46 +1,59 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AtividadeAgenda12e13.Views.Home"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundColor= "{StaticResource BackGround}">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AtividadeAgenda12e13.Views.Home"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="{StaticResource BackGround}">
 
-    <Grid 
-        RowDefinitions="*, *, *, *, *, *, Auto, *, *, *, Auto, *, *, *, *, *"
+    <Grid
+        RowDefinitions="*, *, *, *, *, *, Auto, *, auto, *, Auto, *, *, *, *, *"
         ColumnDefinitions="*, *, *, *, *, *, *, *, *">
 
-        <Label 
+        <Label
             Grid.Row="1"
             Grid.RowSpan="2"
             Grid.Column="1"
             Grid.ColumnSpan="7"
-            
             Text="MaUI Hotel"
             FontFamily="UrbanistBold"
             FontSize="55"
             HorizontalOptions="Center"
-            TextColor="{StaticResource Color1}"/>
+            TextColor="{StaticResource Color1}" />
 
-        <Button 
-             Grid.Row="6"
-             Grid.RowSpan="1"
-             Grid.Column="1"
-             Grid.ColumnSpan="7"
+        <Button
+            Grid.Row="6"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="7"
             Margin="5,5,5,5"
             VerticalOptions="Fill"
-            
             Text="Contratar hospedagem"
             FontFamily="Urbanist"
             FontSize="20"
             BackgroundColor="{StaticResource Color2}"
             Clicked="OpenHiringPage"
-            />
+        />
 
-        <Button 
-             Grid.Row="10"
-             Grid.RowSpan="1"
-             Grid.Column="1"
-             Grid.ColumnSpan="7"
+        <Button
+            Grid.Row="8"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="7"
+            Margin="5,5,5,5"
+            VerticalOptions="Fill"
+            Text="Histórico de Hospedagens"
+            FontFamily="Urbanist"
+            FontSize="20"
+            BackgroundColor="{StaticResource Color2}"
+            Clicked="OpenHostingHistory"
+        />
+
+
+        <Button
+            Grid.Row="10"
+            Grid.RowSpan="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="7"
             Margin="5,5,5,5"
             VerticalOptions="Fill"
             Text="Sobre"
@@ -48,8 +61,7 @@
             FontSize="17"
             BackgroundColor="{StaticResource Color2}"
             Clicked="OpenAboutPage"
-            
-            />
+        />
     </Grid>
 
 </ContentPage>
