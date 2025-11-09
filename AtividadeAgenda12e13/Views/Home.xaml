@@ -35,7 +35,7 @@
             Grid.ColumnSpan="7"
             Margin="5,5,5,5"
             VerticalOptions="Fill"
-            Text="Contratar hospedagem"
+            Text="Contratar Hospedagem"
             FontFamily="Urbanist"
             FontSize="20"
             BackgroundColor="{StaticResource Color2}"
